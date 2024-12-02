@@ -2,18 +2,15 @@
 import math
 import sys
 
-# sys.stdinから値を受け取る
-degree = float(sys.stdin.readline().strip())  # 入力された角度を浮動小数点数に変換
+degree = float(sys.stdin.readline().strip())
 
-# 角度をラジアンに変換
+
 radian = math.radians(degree)
 
-    # 三角関数の計
 sine = math.sin(radian)
 cosine = math.cos(radian)
 tangent = math.tan(radian)
     
-    # 結果を出力
 print(f"{degree}度の三角関数:")
 print(f"sin({degree}°) = {sine}")
 print(f"cos({degree}°) = {cosine}")

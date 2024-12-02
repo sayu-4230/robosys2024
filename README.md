@@ -4,6 +4,13 @@
 ## 概要
 - 入力された角度に応じて三角関数の値を出力します。
 
+## 必要なソフトウェア
+- Python 
+    テスト済みバージョン:3.7~3.10
+
+## テスト環境
+- Ubuntu20.04 LTS
+
 ## インストール方法
 以下の手順でプロジェクトをローカル環境にインストールしてください。
 
@@ -26,7 +33,7 @@ $ chmod +x kansuuenzan
 $ echo <角度> | ./kansuuenzan
 ```
 
-##　実行例
+###　実行例
 - 実行例１
 ```
 $ echo 45 | ./kansuuenzan
@@ -59,6 +66,27 @@ $ echo 65 | ./kansuuenzan
 sin(65.0°) = 0.9063077870366499
 cos(65.0°) = 0.42261826174069944
 tan(65.0°) = 2.1445069205095586
+```
+
+## サンプルプログラム
+```
+#!/usr/bin/python3
+import math
+import sys
+
+degree = float(sys.stdin.readline().strip())
+
+
+radian = math.radians(degree)
+
+sine = math.sin(radian)
+cosine = math.cos(radian)
+tangent = math.tan(radian)
+    
+print(f"{degree}度の三角関数:")
+print(f"sin({degree}°) = {sine}")
+print(f"cos({degree}°) = {cosine}")
+print(f"tan({degree}°) = {tangent}")
 ```
 
 ## ライセンス
