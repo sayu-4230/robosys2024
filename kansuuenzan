@@ -3,7 +3,6 @@ import math
 import sys
 
 # sys.stdinから値を受け取る
-print("角度を入力: ")
 degree = float(sys.stdin.readline().strip())  # 入力された角度を浮動小数点数に変換
 
 # 角度をラジアンに変換
